@@ -1,64 +1,60 @@
-<!DOCTYPE html> 
-<html> 
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>Traveler's Guide</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Login Page </title>
-<style> 
-Body {
-  font-family: Calibri, Helvetica, sans-serif;
-  background-color: pink;
-}
-button { 
-       background-color: #4CAF50; 
-       width: 100%;
-        color: orange; 
-        padding: 15px; 
-        margin: 10px 0px; 
-        border: none; 
-        cursor: pointer; 
-         } 
- form { 
-        border: 3px solid #f1f1f1; 
-    } 
- input[type=text], input[type=password] { 
-        width: 100%; 
-        margin: 8px 0;
-        padding: 12px 20px; 
-        display: inline-block; 
-        border: 2px solid green; 
-        box-sizing: border-box; 
-    }
- button:hover { 
-        opacity: 0.7; 
-    } 
-  .cancelbtn { 
-        width: auto; 
-        padding: 10px 18px;
-        margin: 10px 5px;
-    } 
-      
-   
- .container { 
-        padding: 25px; 
-        background-color: lightblue;
-    } 
-</style> 
-</head>  
-<body>  
-    <center> <h1> Student Login Form </h1> </center> 
-    <form>
-        <div class="container"> 
-            <label>Username : </label> 
-            <input type="text" placeholder="Enter Username" name="username" required>
-            <label>Password : </label> 
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button> 
-            <input type="checkbox" checked="checked"> Remember me 
-            <button type="button" class="cancelbtn"> Cancel</button> 
-            Forgot <a href="#"> password? </a> 
-        </div> 
-    </form>   
-</body>   
-</html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
 
- 
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Traveler's Guide</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Traveler's Guide</h5>
+    <h3 class="w3-hide-medium w3-hide-small">Share, Learn and Travel</h3>
+  </div>
+  
+
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+
+  <!-- Images (Portfolio) -->
+
+  <img src="https://www.exoticca.com/ca/blog/wp-content/uploads/2019/03/The-best-beaches-in-Brazil-Aren%E2%80%99t-you-going-to-visit-them-930x360.jpg" alt="W3Schools.com" width="950"> 
+  <img src="https://www.exoticca.com/us/blog/wp-content/uploads/2021/08/Inca-Trail-BLOG-Header-930x360.png" alt="W3Schools.com" width="950"> 
+
+<!-- Navbar (placed at the bottom of the header image) -->
+<div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="index.html" class="w3-bar-item w3-button">Log In</a>
+  <a href="index.html" class="w3-bar-item w3-button">Sign Up</a>
+  
+
+</div>
+
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+<a href="index.html" class="w3-bar-item w3-button">Home</a>
+<a href="index.html" class="w3-bar-item w3-button">Log In</a>
+<a href="index.html" class="w3-bar-item w3-button">Sign Up</a>
+
+
+</div>
+<div id="Home" class="tabcontent">
+<h3>Home</h3>
+<p>Home is where the heart is..</p>
+</div>
+</div>
+
+
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>
