@@ -1,214 +1,203 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Traverler's Guide</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-.myLink {display: none}
-</style>
+    <title>Traverler's Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+        .myLink {display: none}
+    </style>
 </head>
 <body class="w3-light-grey">
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-  <a href="#" class="w3-bar-item w3-button w3-text-blue w3-hover-blue"><b><i class="fa fa-map-marker w3-margin-right"></i>Traveler's Guide</b></a>
-  <a href="#" class="w3-bar-item w3-button w3-right w3-hover-blue w3-text-grey"><i class="fa fa-search"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Traveler's Guide</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"><i class="fa fa-search"></i></a>
 </div>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
-  <img class="w3-image" src="https://www.houstonmethodist.org/-/media/images/contenthub/article-images/infectious-disease/hub_coronavirustravel_social.jpg?mw=1382&hash=D3FA278194296BBF8FBB411DBF30D84E" alt="Plane" width="1500" height="700">
-  <div class="w3-display-middle" style="width:65%">
-    <div class="w3-bar w3-black">
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Travel');"><i class="fa fa-plane w3-margin-right"></i>Travel</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Reviews');"><i class="fa fa-bed w3-margin-right"></i>Reviews</button>
-      <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Itineraries');"><i class="fa fa-car w3-margin-right"></i>Itineraries</button>
-    </div>
-
-    <!-- Tabs -->
-    <div id="Travel" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>Share, Learn and Travel</h3>
-      <p>Search a country to learn about the culture.</p>
-      <div class="w3-row-padding" style="margin:0 -16px;">
-        <div class="w3-half">
-          <label>Find</label>
-          <input class="w3-input w3-border" type="text" placeholder="Traveling to">
+    <img class="w3-image" src="https://www.houstonmethodist.org/-/media/images/contenthub/article-images/infectious-disease/hub_coronavirustravel_social.jpg?mw=1382&hash=D3FA278194296BBF8FBB411DBF30D84E" alt="Plane" width="1500" height="700">
+    <div class="w3-display-middle" style="width:65%">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Travel');"><i class="fa fa-plane w3-margin-right"></i>Travel</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Reviews');"><i class="fa fa-bed w3-margin-right"></i>Reviews</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Itineraries');"><i class="fa fa-car w3-margin-right"></i>Itineraries</button>
         </div>
-        
-      </div>
-      <p><button class="w3-button w3-dark-grey">Search</button></p>
-      <script>
-        function openPage(){
-          var x = document.getElementById("Search").value;
 
-          if(x=="Turkey"){
-            window.open(login.html)
-          }
-        }
-      </script>
+        <!-- Tabs -->
+        <div id="Travel" class="w3-container w3-white w3-padding-16 myLink">
+            <h3>Share, Learn and Travel</h3>
+            <p>Search a country to learn about the culture.</p>
+            <div class="w3-row-padding" style="margin:0 -16px;">
+                <div class="w3-half">
+                    <label>Find</label>
+                    <input id="search-box" class="w3-input w3-border" type="text" placeholder="Traveling to">
+                </div>
+
+            </div>
+            <p><button id="search-button" class="w3-button w3-dark-grey">Search</button></p>
+            <script src = "search.js"></script>
+        </div>
+
+        <div id="Reviews" class="w3-container w3-white w3-padding-16 myLink">
+            <h3>Read Reviews</h3>
+            <p>Search up a country to find reviews about it from travelers who visited.</p>
+            <p>Reaserch before traveling is important - Let us help!</p>
+            <p><button class="w3-button w3-dark-grey">Search Countries</button></p>
+        </div>
+
+        <div id="Itineraries" class="w3-container w3-white w3-padding-16 myLink">
+            <h3>Plan your travels with an itinerary!</h3>
+            <p> Find sample itineraries from past travelers as inspiration for your own!</p>
+            <input class="w3-input w3-border" type="text" placeholder="Which Country">
+            <p><button class="w3-button w3-dark-grey">Search Itineraries</button></p>
+        </div>
     </div>
-
-    <div id="Reviews" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>Read Reviews</h3>
-      <p>Search up a country to find reviews about it from travelers who visited.</p>
-      <p>Reaserch before traveling is important - Let us help!</p>
-      <p><button id="search-botton" class="w3-button w3-dark-grey">Search Countries</button></p>
-      <script src = "search.js"></script>
-    </div>
-
-
-
-    <div id="Itineraries" class="w3-container w3-white w3-padding-16 myLink">
-      <h3>Plan your travels with an itinerary!</h3>
-      <p> Find sample itineraries from past travelers as inspiration for your own!</p>
-      <input class="w3-input w3-border" type="text" placeholder="Which Country">
-      <p><button class="w3-button w3-dark-grey">Search Itineraries</button></p>
-    </div>
-  </div>
 </header>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px;">
 
-  <!-- Good offers -->
-  <div class="w3-container w3-margin-top">
-    <h3>Visit new countries</h3>
-    <h6>Learn while traveling and share with others</h6>
-  </div>
-  <div class="w3-row-padding w3-text-white w3-large">
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="https://www.exoticca.com/us/blog/wp-content/uploads/2021/09/Best-places-to-visit-South-America-BLOG-header-930x360.png" alt="Brazil" style="width:100%" height = "318">
-        <p>Check out <a href="postChina.html" target="_blank">freeCodeCamp</a>.</p>
-        <span class="w3-display-bottomleft w3-padding">Brazil</span>
-      </div>
+    <!-- Good offers -->
+    <div class="w3-container w3-margin-top">
+        <h3>Visit new countries</h3>
+        <h6>Learn while traveling and share with others</h6>
     </div>
-    <div class="w3-half">
-      <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-row-padding w3-text-white w3-large">
         <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/e3/1d/freedom-tower.jpg" alt="New York" style="width:100%" height = "150">
-            <span class="w3-display-bottomleft w3-padding">United States of America</span>
-          </div>
+            <div class="w3-display-container">
+                <img src="https://www.exoticca.com/us/blog/wp-content/uploads/2021/09/Best-places-to-visit-South-America-BLOG-header-930x360.png" alt="Brazil" style="width:100%" height = "318">
+                <span class="w3-display-bottomleft w3-padding">Brazil</span>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/9a/e3/1d/freedom-tower.jpg" alt="New York" style="width:100%" height = "150">
+                        <span class="w3-display-bottomleft w3-padding">United States of America</span>
+                    </div>
+                </div>
+                <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <img src="https://www.exoticca.com/us/blog/wp-content/uploads/2021/08/Inca-Trail-BLOG-Header-930x360.png" alt="Peru" style="width:100%" height = "150">
+                        <span class="w3-display-bottomleft w3-padding">Peru</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <img src="https://www.remotelands.com/remotenew1/dist/images/country/macao/b170630001.jpg" alt="Macao" style="width:100%" height = "150">
+                        <span class="w3-display-bottomleft w3-padding">Macao</span>
+                    </div>
+                </div>
+                <div class="w3-half w3-margin-bottom">
+                    <div class="w3-display-container">
+                        <img src="https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2012/10/thumb_720_450_782.jpg" alt="Turkey" style="width:100%" height = "150" class="rounded">
+                        <span class="w3-display-bottomleft w3-padding">Turkey</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Nature -->
+    <div class="w3-container">
+        <h3>Explore Nature</h3>
+        <p>Travel and see nature at its finest.</p>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-half w3-margin-bottom">
+            <img src="https://res.cloudinary.com/simpleview/image/upload/v1574085889/clients/norway/bryggen_wharf_bergen_hordaland_fjord_norway_photo_florian_olbrechts_34ad36ea-f7bc-4150-b48b-af2c2c14628f.jpg" alt="Norway" style="width:100%">
+            <div class="w3-container w3-white">
+                <h3>Bergen, Norway</h3>
+                <p class="w3-opacity">XXX Reviews</p>
+                <p>Get to see what others have to say about Norway.</p>
+                <button class="w3-button w3-margin-bottom">View Reviews</button>
+            </div>
         </div>
         <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="https://www.exoticca.com/us/blog/wp-content/uploads/2021/08/Inca-Trail-BLOG-Header-930x360.png" alt="Peru" style="width:100%" height = "150">
-            <span class="w3-display-bottomleft w3-padding">Peru</span>
-          </div>
+            <img src="https://theplanetd.com/images/places-to-visit-in-berlin-germany.jpg" alt="Germany" style="width:100%">
+            <div class="w3-container w3-white">
+                <h3>Berlin, Germany</h3>
+                <p class="w3-opacity">XXX Reviews</p>
+                <p>View itenineraries other travelers have made to help plan your own.</p>
+                <button class="w3-button w3-margin-bottom">View Itineraries</button>
+            </div>
         </div>
-      </div>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="https://www.remotelands.com/remotenew1/dist/images/country/macao/b170630001.jpg" alt="Macao" style="width:100%" height = "150">
-            <span class="w3-display-bottomleft w3-padding">Macao</span>
-          </div>
+    </div>
+
+    <!--Login -->
+    <div class="w3-container">
+        <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+            <h2>Subscribe To Us!</h2>
+            <p>Get news on new tips for traveling!.</p>
+            <label>Email</label>
+            <input class="w3-input w3-border" type="text" placeholder="Your Email">
+            <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
         </div>
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2012/10/thumb_720_450_782.jpg" alt="Turkey" style="width:100%" height = "150" class="rounded">
-            <span class="w3-display-bottomleft w3-padding">Turkey</span>
-          </div>
+    </div>
+
+
+
+    <!-- Contact -->
+    <div class="w3-container">
+        <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/10/07/letter-t-g-tour-and-travel-vector-19871007.jpg"  align="right" style="align-right" style="width:100%" height = 320 >
+
+            <h2>Contact</h2>
+            <i class="fa fa-map-marker" style="width:30px"></i> Philadelphia, US<br>
+
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: travelersguide12@outlook.com<br>
+
+            <form action="https://formsubmit.co/travelersguide12@outlook.com" method="POST">
+                <input type="hidden" name="_next" value="https://ania-kubow.com/thankyou.html">
+
+                <p></p>
+                <input type="text" name="name"  placeholder="Message" required>
+                <p></p>
+                <input type="email" name="email"  placeholder="Email"required>
+                <p></p>
+                <button type="submit" class="w3-button w3-red w3-margin-top">Send
+            </form>
+
+
         </div>
-      </div>
+
+
+        <!-- End page content -->
     </div>
-  </div>
-
-  <!-- Explore Nature -->
-  <div class="w3-container">
-    <h3>Explore Nature</h3>
-    <p>Travel and see nature at its finest.</p>
-  </div>
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <img src="https://res.cloudinary.com/simpleview/image/upload/v1574085889/clients/norway/bryggen_wharf_bergen_hordaland_fjord_norway_photo_florian_olbrechts_34ad36ea-f7bc-4150-b48b-af2c2c14628f.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container w3-white">
-        <h3>Bergen, Norway</h3>
-        <p class="w3-opacity">XXX Reviews</p>
-        <p>Get to see what others have to say about Norway.</p>
-        <button class="w3-button w3-margin-bottom">View Reviews</button>
-      </div>
-    </div>
-    <div class="w3-half w3-margin-bottom">
-      <img src="https://theplanetd.com/images/places-to-visit-in-berlin-germany.jpg" alt="Germany" style="width:100%">
-      <div class="w3-container w3-white">
-        <h3>Berlin, Germany</h3>
-        <p class="w3-opacity">XXX Reviews</p>
-        <p>View itenineraries other travelers have made to help plan your own.</p>
-        <button class="w3-button w3-margin-bottom">View Itineraries</button>
-      </div>
-    </div>
-  </div>
-
-  <!--Login -->
-  <div class="w3-container">
-    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
-      <h2>Subscribe To Us!</h2>
-      <p>Get news on new tips for traveling!.</p>
-      <label>Email</label>
-      <input class="w3-input w3-border" type="text" placeholder="Your Email">
-      <button type="button" class="w3-button w3-blue w3-margin-top">Subscribe</button>
-    </div>
-  </div>
 
 
-  
-  <!-- Contact -->
-  <div class="w3-container">
-    <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
-   
-      <img src="https://cdn3.vectorstock.com/i/1000x1000/10/07/letter-t-g-tour-and-travel-vector-19871007.jpg"  align="right" style="align-right" style="width:100%" height = 320 >
-   
-    <h2>Contact</h2>
-    <i class="fa fa-map-marker" style="width:30px"></i> Philadelphia, US<br>
+    <script>
+        // Tabs
+        function openLink(evt, linkName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("myLink");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(linkName).style.display = "block";
+            evt.currentTarget.className += " w3-red";
+        }
 
-    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-    <i class="fa fa-envelope" style="width:30px"> </i> Email: travelersguide12@outlook.com<br>
-
-    <form action="https://formsubmit.co/travelersguide12@outlook.com" method="POST">
-        <input type="hidden" name="_next" value="https://ania-kubow.com/thankyou.html">
-
-        <p></p>
-        <input type="text" name="name"  placeholder="Message" required>
-        <p></p>
-        <input type="email" name="email"  placeholder="Email"required>
-        <p></p>
-        <button type="submit" class="w3-button w3-blue w3-margin-top">Send
-    </form>
-    
-
-  </div>
-
-  
-<!-- End page content -->
-</div>
-
-
-<script>
-// Tabs
-function openLink(evt, linkName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("myLink");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
-  }
-  document.getElementById(linkName).style.display = "block";
-  evt.currentTarget.className += " w3-blue";
-}
-
-// Click on the first tablink on load
-document.getElementsByClassName("tablink")[0].click();
-</script>
+        // Click on the first tablink on load
+        document.getElementsByClassName("tablink")[0].click();
+    </script>
 
 </body>
 </html>
+
