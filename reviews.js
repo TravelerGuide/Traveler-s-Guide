@@ -52,9 +52,9 @@ function addReview(){
       <input type="text" id="name" name="name" required><br><br>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required><br><br>
-      <label for="comment">Comment:</label><br>
       <label for="name">Country:</label>
       <input type="text" id="name" name="Country" required><br><br>
+      <label for="comment">Comment:</label><br>
       <textarea id="comment" name="comment" required></textarea><br><br>
       <button type="submit">Submit</button>
     </form>
