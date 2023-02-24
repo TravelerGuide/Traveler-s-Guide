@@ -15,12 +15,12 @@ function addReview(){
 <html>
 <head>
   <title>Search Countries</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="postBrazil.css">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>My Website</h1>
+      <h1>Search Countries</h1>
       <div class="search-container">
         <form action="/search">
           <input type="text" placeholder="Search countries...">
