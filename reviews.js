@@ -11,6 +11,9 @@ function addReview(){
     let newTab = window.open(""); // open a new tab
     // create HTML for the new page
     let newPageHTML = `<!DOCTYPE html>
+    <head>
+  <link rel="stylesheet" href="postBrazil.css">
+</head>
     <div>
     <h2>Leave a Comment</h2>
     <form>
