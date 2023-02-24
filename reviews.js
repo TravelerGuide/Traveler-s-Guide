@@ -14,9 +14,23 @@ function addReview(){
     <!DOCTYPE html>
 <html>
 <head>
-  <title>Comments</title>
-  <link rel="stylesheet" href="postBrazil.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Website</h1>
+      <div class="search-container">
+        <form action="/search">
+          <input type="text" placeholder="Search countries...">
+          <button type="submit"><i class="fa fa-filter"></i></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+
 <body>
   <div>
     <h2>Comments</h2>
@@ -45,8 +59,9 @@ function addReview(){
       <button type="submit">Submit</button>
     </form>
   </div>
-</body>
-</html>
+  </main>
+  </body>
+  </html>
 
 
   
