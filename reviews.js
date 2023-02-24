@@ -34,17 +34,20 @@ function addReview(){
 <body>
   <div>
     <h2>Comments</h2>
+    <div class="comment-container">
     <div class="comment">
       <h3>Nazli Iclal Karaman</h3>
       <p class="comment-date">Turkey</p>
       <p class="comment-date">February 22, 2023</p>
       <p class="comment-text">This is a great website! It's nice to write about my own experiences. </p>
     </div>
+    <div class="comment-container">
     <div class="comment">
       <h3>Kaylen Bom</h3>
       <p class="comment-date">Brazil</p>
       <p class="comment-date">February 20, 2023</p>
       <p class="comment-text">I love the design of this website. It's really usefull for travellers.</p>
+    </div>
     </div>
     <h2>Leave a Comment</h2>
     <form>
