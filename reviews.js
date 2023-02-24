@@ -14,7 +14,7 @@ function addReview(){
     <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Search Countries</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
