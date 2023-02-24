@@ -22,11 +22,13 @@ function addReview(){
     <h2>Comments</h2>
     <div class="comment">
       <h3>Nazli Iclal Karaman</h3>
+      <p class="comment-date">Turkey</p>
       <p class="comment-date">February 22, 2023</p>
-      <p class="comment-text">This is a great website! It's nice to write about my own experiences.. </p>
+      <p class="comment-text">This is a great website! It's nice to write about my own experiences. </p>
     </div>
     <div class="comment">
       <h3>Kaylen Bom</h3>
+      <p class="comment-date">Brazil</p>
       <p class="comment-date">February 20, 2023</p>
       <p class="comment-text">I love the design of this website. It's really usefull for travellers.</p>
     </div>
@@ -37,6 +39,8 @@ function addReview(){
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required><br><br>
       <label for="comment">Comment:</label><br>
+      <label for="name">Country:</label>
+      <input type="text" id="name" name="Country" required><br><br>
       <textarea id="comment" name="comment" required></textarea><br><br>
       <button type="submit">Submit</button>
     </form>
