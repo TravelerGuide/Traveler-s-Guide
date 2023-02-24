@@ -12,7 +12,7 @@ function addReview(){
     // create HTML for the new page
     let newPageHTML = `<!DOCTYPE html>
     <head>
-  <link rel="stylesheet" href="postBrazil.css">
+  <link rel="stylesheet" href="postBrazil.css"/>
 </head>
 <div>
 <h2>Comments</h2>
