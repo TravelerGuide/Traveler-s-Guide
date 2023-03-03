@@ -42,7 +42,7 @@ function searchForCountry(){
     </div>
     <div class="w3-row-padding">
         <div class="w3-half w3-margin-bottom">
-            <img src="images/iguazu.jfif" alt="Norway" style="width:100%">
+            <img src="iguazu.jfif" alt="Norway" style="width:100%">
             <div class="w3-container w3-white">
                 <h3>Iguazu Falls, Foz do Iguaçu</h3>
                 <p class="w3-opacity">3 Reviews</p>
@@ -51,7 +51,7 @@ function searchForCountry(){
             </div>
         </div>
         <div class="w3-half w3-margin-bottom">
-            <img src="images/christredeemer.jfif" alt="Germany" style="width:100%">
+            <img src="christredeemer.jfif" alt="Germany" style="width:100%">
             <div class="w3-container w3-white">
                 <h3>Christ Redeemer, Rio de Janeiro</h3>
                 <p class="w3-opacity">2 Reviews</p>
@@ -61,7 +61,7 @@ function searchForCountry(){
         </div>
         <div class="w3-row-padding">
             <div class="w3-half w3-margin-bottom">
-                <img src="images/lencois.jfif" alt="Norway" style="width:100%">
+                <img src="lencois.jfif" alt="Norway" style="width:100%">
                 <div class="w3-container w3-white">
                     <h3>Lençóis Maranhenses National Park, Barreirinhas</h3>
                     <p class="w3-opacity">1 Reviews</p>
@@ -70,7 +70,7 @@ function searchForCountry(){
                 </div>
             </div>
             <div class="w3-half w3-margin-bottom">
-                <img src="images/beco.jfif" alt="Germany" style="width:100%">
+                <img src="beco.jfif" alt="Germany" style="width:100%">
                 <div class="w3-container w3-white">
                     <h3>Beco do Batman, São Paulo</h3>
                     <p class="w3-opacity">2 Reviews</p>
