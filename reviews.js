@@ -33,13 +33,15 @@ function addReview(){
 
 <body>
   <div>
-    <h2>Comments</h2>
+    <h2>Reviews</h2>
     <div class="comment-container">
     <div class="comment">
       <h3>Nazli Iclal Karaman</h3>
-      <p class="comment-date">Turkey</p>
+      <p class="comment-date">Turkey/Istanbul/Kadikoy</p>
       <p class="comment-date">February 22, 2023</p>
-      <p class="comment-text">This is a great website! It's nice to write about my own experiences. </p>
+      <p class="comment-text">This is a great website! It's nice to write about my own experiences. 
+      If you want to spend your free full day in Kadikoy, you can find a beatiful place in every corner.
+      You may buy whatever you need, you can see many shopping area, or have a delicious lunch and dinner. I can say that you can not forget this experience. </p>
     </div>
     <div class="comment-container">
     <div class="comment">
